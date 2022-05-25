@@ -1,6 +1,6 @@
 package services;
 
-public class UsaInterestservice {
+public class UsaInterestservice implements InterestService {
 
 	private double interestRate;
 
@@ -8,6 +8,7 @@ public class UsaInterestservice {
 		this.interestRate = interestRate;
 	}
 
+	@Override
 	public double getInterestRate() {
 		return interestRate;
 	}
